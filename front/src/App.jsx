@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import Homepage from './pages/user/Homepage'
+
 function App() {
   const [loading, setLoading] = useState(false)
 
@@ -26,7 +28,7 @@ function App() {
         <body className='min-h-screen'>
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Homepage />} />
             </Routes>
           </BrowserRouter>
 

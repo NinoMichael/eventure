@@ -7,8 +7,8 @@
   }
 
   @font-face {
-    font-family: 'Kanit';
-    src: url('/fonts/Kanit/Kanit-Regular.ttf');
+    font-family: 'Courgette';
+    src: url('/fonts/Courgette/Courgette-Regular.ttf');
   }
 }
 
@@ -25,10 +25,12 @@ body {
   margin : 0;
 }
 
-/*
-.custom-p-dropdown .p-dropdown-label {
-  @apply text-sm;
-  @apply font-poppins;
+.custom-bg-home {
+  background-image : url('./images/bg-purple.jpg');
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-position : top;
+  background-attachment : fixed;
 }
 
 .custom-menubar {
@@ -40,6 +42,21 @@ body {
 background-color: transparent !important;
 }
 
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
+  color : white !important;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text:hover {
+  background-color : transparent !important;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content:hover {
+  background-color : transparent !important;
+  text-decoration : underline 2px white !important;
+  text-underline-offset : 12px;
+}
+
+/*
 .custom-home-calendar .p-calendar .p-inputtext  {
   background : transparent !important;
   padding: 0.2rem 0.4rem; 

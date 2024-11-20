@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         purpleCustom: '#711A75',
-        blackCustom: '#45474B',
+        blackCustom: '#343131',
       },
       screens: {
         'xmd': '960px',
@@ -19,7 +19,7 @@ export default {
 
       fontFamily: {
         poppins: 'Poppins',
-        kanit: 'Kanit',
+        courgette: 'Courgette',
       },
     },
   },
