@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Homepage from './pages/user/Homepage'
+import Login from './pages/user/Login'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -29,6 +30,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Homepage />} />
+              <Route path="/login" element={<Login />} />
             </Routes>
           </BrowserRouter>
 
