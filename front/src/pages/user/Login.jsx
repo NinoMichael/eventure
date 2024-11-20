@@ -86,7 +86,7 @@ const Login = () => {
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    className="font-poppins text-sm bg-transparent"
+                                    className="font-poppins text-sm bg-transparent text-white"
                                 />
                                 <label htmlFor="email" className="text-white">
                                     Adresse e-mail

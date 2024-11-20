@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Homepage from './pages/user/Homepage'
 import Login from './pages/user/Login'
+import HomeRegister from './pages/user/HomeRegister'
+import EmailRegister from './pages/user/EmailRegister'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -31,6 +33,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/home-register" element={<HomeRegister />} />
+              <Route path="/email-register" element={<EmailRegister />} />
             </Routes>
           </BrowserRouter>
 

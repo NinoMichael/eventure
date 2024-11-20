@@ -8,3 +8,7 @@
     color: white !important;
     opacity: 1; 
 }
+
+.p-dialog .p-dialog-header, .p-dialog .p-dialog-content {
+    @apply bg-blackCustom;
+}
