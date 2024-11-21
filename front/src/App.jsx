@@ -10,6 +10,8 @@ import HomeRegister from './pages/user/HomeRegister'
 import EmailRegister from './pages/user/EmailRegister'
 import PasswordRegister from './pages/user/PasswordRegister'
 
+import LoginAdmin from './pages/admin/Login'
+
 function App() {
   const [loading, setLoading] = useState(false)
 
@@ -32,11 +34,15 @@ function App() {
         <body className='min-h-screen'>
           <BrowserRouter>
             <Routes>
+              {/* ======= USER ========= */}
               <Route path="/" element={<Homepage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/home-register" element={<HomeRegister />} />
               <Route path="/email-register" element={<EmailRegister />} />
               <Route path="/password-register" element={<PasswordRegister />} />
+
+              {/* ======= ADMIN ========= */}
+              <Route path="/login-admin" element={<LoginAdmin />} />
             </Routes>
           </BrowserRouter>
 

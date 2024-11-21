@@ -9,6 +9,7 @@ export default {
       colors: {
         purpleCustom: '#711A75',
         blackCustom: '#343131',
+        blackPure: '#1E201E',
       },
       screens: {
         'xmd': '960px',
