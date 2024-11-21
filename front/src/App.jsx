@@ -8,6 +8,7 @@ import Homepage from './pages/user/Homepage'
 import Login from './pages/user/Login'
 import HomeRegister from './pages/user/HomeRegister'
 import EmailRegister from './pages/user/EmailRegister'
+import PasswordRegister from './pages/user/PasswordRegister'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -35,6 +36,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/home-register" element={<HomeRegister />} />
               <Route path="/email-register" element={<EmailRegister />} />
+              <Route path="/password-register" element={<PasswordRegister />} />
             </Routes>
           </BrowserRouter>
 

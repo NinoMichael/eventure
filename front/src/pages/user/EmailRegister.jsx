@@ -63,7 +63,7 @@ const EmailRegister = () => {
                                 </FloatLabel>
                             </div>
 
-                            <div className="p-inputgroup flex-1 mt-4">
+                            <div className="p-inputgroup flex-1 mt-8">
                                 <span className="p-inputgroup-addon bg-transparent">
                                     <i className="pi pi-envelope text-white"></i>
                                 </span>
