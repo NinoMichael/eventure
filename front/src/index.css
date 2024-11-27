@@ -137,6 +137,8 @@ background-color: transparent !important;
   @apply text-white;
 }
 
+*/
+
 .custom-input-search-for-company:focus {
   outline: none;
   box-shadow: none;
@@ -144,4 +146,8 @@ background-color: transparent !important;
 
 .custom-border-search {
   border : 1px solid white;
-}*/
+}
+
+.p-menu .p-submenu-header {
+  @apply bg-blackCustom;
+}

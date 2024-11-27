@@ -11,6 +11,7 @@ import EmailRegister from './pages/user/EmailRegister'
 import PasswordRegister from './pages/user/PasswordRegister'
 
 import LoginAdmin from './pages/admin/Login'
+import DashboardAdmin from './pages/admin/Dashboard'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -43,6 +44,7 @@ function App() {
 
               {/* ======= ADMIN ========= */}
               <Route path="/login-admin" element={<LoginAdmin />} />
+              <Route path="/dashboard-admin" element={<DashboardAdmin />} />
             </Routes>
           </BrowserRouter>
 
