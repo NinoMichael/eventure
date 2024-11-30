@@ -81,3 +81,11 @@
   .p-dropdown-panel .p-dropdown-items .p-dropdown-item:hover {
     @apply bg-purple-500;
   }
+
+  .custom-input-chat:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+ 
+

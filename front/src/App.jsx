@@ -13,6 +13,7 @@ import PasswordRegister from './pages/user/PasswordRegister'
 import LoginAdmin from './pages/admin/Login'
 import DashboardAdmin from './pages/admin/Dashboard'
 import Explore from './pages/user/Explore'
+import Workspace from './pages/admin/Workspace'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -47,6 +48,7 @@ function App() {
               {/* ======= ADMIN ========= */}
               <Route path="/login-admin" element={<LoginAdmin />} />
               <Route path="/dashboard-admin" element={<DashboardAdmin />} />
+              <Route path="/workspace" element={<Workspace />} />
             </Routes>
           </BrowserRouter>
 

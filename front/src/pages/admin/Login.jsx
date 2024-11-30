@@ -4,9 +4,6 @@ import { FloatLabel } from "primereact/floatlabel"
 import { Button } from "primereact/button"
 import { InputText } from "primereact/inputtext"
 import { Password } from "primereact/password"
-import { Checkbox } from "primereact/checkbox"
-import { Link } from "react-router-dom"
-import { Divider } from "primereact/divider"
 import { useNavigate } from "react-router-dom"
 
 import logo from "../../assets/icons/logo-white.png"
@@ -26,6 +23,10 @@ const LoginAdmin = () => {
             transition: { duration: 0.8, ease: "easeInOut" },
         },
         exit: { opacity: 0, x: "100%", transition: { duration: 0.8, ease: "easeInOut" } },
+    }
+
+    const handleLogin = () => {
+        navigate('/dashboard')
     }
 
     return (
@@ -106,6 +107,7 @@ const LoginAdmin = () => {
                             label="Se connecter"
                             type="submit"
                             className="bg-purpleCustom text-white mt-10 font-poppins border border-none outline outline-none rounded py-2 w-full"
+                            onClick={() => handleLogin}
                         />
 
                     </form>

@@ -43,7 +43,7 @@ const VMenuAdmin = ({ collapsed, setCollapsed }) => {
                     label: "Tableau de bord",
                     icon: 'pi pi-home',
                     template: itemRenderer,
-                    url: '/dashboard-company'
+                    url: '/dashboard-admin'
                 },
                 {
                     label: "Audience",
@@ -61,7 +61,8 @@ const VMenuAdmin = ({ collapsed, setCollapsed }) => {
                     label: "Espace",
                     icon: 'pi pi-inbox',
                     badge: 2,
-                    template: itemRenderer
+                    template: itemRenderer,
+                    url: '/workspace'
                 },
                 {
                     label: "Historique",
