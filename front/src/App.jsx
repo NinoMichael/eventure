@@ -14,6 +14,7 @@ import LoginAdmin from './pages/admin/Login'
 import DashboardAdmin from './pages/admin/Dashboard'
 import Explore from './pages/user/Explore'
 import Workspace from './pages/admin/Workspace'
+import WorkspaceUser from './pages/user/WorkspaceUser'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -49,6 +50,7 @@ function App() {
               <Route path="/login-admin" element={<LoginAdmin />} />
               <Route path="/dashboard-admin" element={<DashboardAdmin />} />
               <Route path="/workspace" element={<Workspace />} />
+              <Route path="/discussion" element={<WorkspaceUser />} />
             </Routes>
           </BrowserRouter>
 

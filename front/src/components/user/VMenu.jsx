@@ -42,13 +42,13 @@ const VMenu = ({ collapsed, setCollapsed }) => {
                     label: "Accueil",
                     icon: 'pi pi-home',
                     template: itemRenderer,
-                    url: '/dashboard-company'
+                    url: '/'
                 },
                 {
                     label: "Découvrir",
                     icon: 'pi pi-globe',
                     template: itemRenderer,
-                    url: ''
+                    url: '/explore'
                 },
                 {
                     label: "Historique",
@@ -60,7 +60,8 @@ const VMenu = ({ collapsed, setCollapsed }) => {
                     label: "Espace",
                     icon: 'pi pi-inbox',
                     badge: 2,
-                    template: itemRenderer
+                    template: itemRenderer,
+                    url: '/discussion',
                 },
                 {
                     label: "Enregistrement",
