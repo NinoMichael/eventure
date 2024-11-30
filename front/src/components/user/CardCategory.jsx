@@ -1,9 +1,11 @@
 import PropTypes from "prop-types"
+import { useNavigate } from "react-router-dom"
 
 const CardCategory = ({ categoryEvent }) => {
+    const navigate = useNavigate()
+
     return (
-        <div className="font-poppins w-64 h-auto relative">
-            {/* Conteneur de l'image */}
+        <div className="font-poppins w-64 h-auto relative cursor-pointer" onClick={() => navigate('/explore/category-event')}>
             <div className="relative rounded-t overflow-hidden">
                 <img
                     alt="Card"

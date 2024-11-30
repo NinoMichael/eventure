@@ -1,7 +1,7 @@
 import { useState, useRef, useMemo } from "react"
 import { InputText } from "primereact/inputtext"
 import { Button } from "primereact/button"
-import ToolBar from "../../components/admin/ToolBar"
+import ToolBar from "../../components/user/ToolBar"
 import { motion } from "framer-motion"
 import VMenu from "../../components/user/VMenu"
 import { Avatar } from "primereact/avatar"

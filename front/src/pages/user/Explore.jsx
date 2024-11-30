@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import ToolBarUser from "../../components/user/ToolBar"
 import { Button } from "primereact/button"
 import CardEvent from "../../components/user/CardEvent"
+import { useNavigate } from "react-router-dom"
 
 import CardCategory from "../../components/user/CardCategory"
 
@@ -16,6 +17,7 @@ import conference from "../../assets/conference.png"
 
 const Explore = () => {
     const [collapsed, setCollapsed] = useState(false)
+    const navigate = useNavigate()
 
     const dataEvents = [
         {
@@ -161,7 +163,7 @@ const Explore = () => {
                     <section className="mb-4">
                         <div className="flex flex-row justify-between">
                             <h3 className="font-poppins text-white text-lg">Evénements à venir</h3>
-                            <Button label="Voir tout" className="bg-purpleCustom mt-2 text-white font-poppins text-sm border border-none outline outline-none h-8" />
+                            <Button label="Voir tout" className="bg-purpleCustom mt-2 text-white font-poppins text-sm border border-none outline outline-none h-8" onClick={() => navigate('/explore/recent-event')} />
                         </div>
 
                         <div className="flex flex-row space-x-3">
@@ -174,7 +176,7 @@ const Explore = () => {
                     <section>
                         <div className="flex flex-row justify-between mt-8">
                             <h3 className="font-poppins text-white text-lg">Suggestions pour vous</h3>
-                            <Button label="Voir tout" className="bg-purpleCustom mt-2 text-white font-poppins text-sm border border-none outline outline-none h-8" />
+                            <Button label="Voir tout" className="bg-purpleCustom mt-2 text-white font-poppins text-sm border border-none outline outline-none h-8" onClick={() => navigate('/explore/suggested-event')} />
                         </div>
 
                         <div className="flex flex-row space-x-3">
