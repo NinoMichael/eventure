@@ -55,7 +55,7 @@ const VMenuAdmin = ({ collapsed, setCollapsed }) => {
                     label: "Evénement",
                     icon: 'pi pi-user',
                     template: itemRenderer,
-                    url: '/'
+                    url: '/event'
                 },
                 {
                     label: "Espace",

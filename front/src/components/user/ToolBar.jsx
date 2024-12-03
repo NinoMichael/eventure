@@ -5,8 +5,11 @@ import { InputText } from "primereact/inputtext"
 import { Button } from "primereact/button"
 import PropTypes from "prop-types"
 
+import ProfileDialog from "./ProfileDialog"
+
 const ToolBarUser = ({ collapsed }) => {
     const [inputSearch, setInputSearch] = useState("")
+    const [visibleProfile, setVisibleProfile] = useState(false)
 
     const centerContent = (
         <div className="">
@@ -19,7 +22,8 @@ const ToolBarUser = ({ collapsed }) => {
 
     const endContent = (
         <div className="mt-7 ms-2">
-            <Avatar label="T" className="-mt-12 bg-purpleCustom text-white" size="large" shape="circle" />
+            <Avatar label="T" className="-mt-12 bg-purpleCustom text-white cursor-pointer" size="large" shape="circle" title="Voir profil"
+                onClick={() => setVisibleProfile(true)} />
         </div>
     )
 
@@ -38,6 +42,8 @@ const ToolBarUser = ({ collapsed }) => {
                 </div>
                 <Toolbar center={centerContent} end={endContent} className="bg-blackCustom -mt-4 border border-none outline-none space-x-12" />
             </header >
+
+            <ProfileDialog visibleProfile={visibleProfile} setVisibleProfile={setVisibleProfile} />
         </>
     )
 }

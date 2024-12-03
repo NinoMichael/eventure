@@ -102,7 +102,7 @@ const SuggestedListEvent = () => {
 
                 <main className={` ${collapsed ? 'ms-24' : 'ms-64'} me-12 mt-2 pb-6`}>
                     <div className="flex flex-row justify-between">
-                        <h3 className="font-poppins text-white text-lg">Evénements à venir</h3>
+                        <h3 className="font-poppins text-white text-lg">Suggestions d'événements pour vous</h3>
                     </div>
 
                     <div className="grid grid-cols-4 gap-x-3 gap-y-4 mb-8">

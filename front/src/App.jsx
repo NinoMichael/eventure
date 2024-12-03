@@ -18,6 +18,8 @@ import WorkspaceUser from './pages/user/WorkspaceUser'
 import ListEvent from './pages/user/ListEvent'
 import SuggestedListEvent from './pages/user/SuggestedListEvent'
 import CategoryEvent from './pages/user/CategoryEvent'
+import Event from './pages/admin/ListEvent'
+import AddEvent from './pages/admin/AddEvent'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -51,12 +53,14 @@ function App() {
               <Route path="/explore/recent-event" element={<ListEvent />} />
               <Route path="/explore/suggested-event" element={<SuggestedListEvent />} />
               <Route path="/explore/category-event" element={<CategoryEvent />} />
+              <Route path="/discussion" element={<WorkspaceUser />} />
 
               {/* ======= ADMIN ========= */}
               <Route path="/login-admin" element={<LoginAdmin />} />
               <Route path="/dashboard-admin" element={<DashboardAdmin />} />
               <Route path="/workspace" element={<Workspace />} />
-              <Route path="/discussion" element={<WorkspaceUser />} />
+              <Route path="/event" element={<Event />} />
+              <Route path="/add-event" element={<AddEvent />} />
 
             </Routes>
           </BrowserRouter>
