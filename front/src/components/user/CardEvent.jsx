@@ -1,9 +1,16 @@
 import { Chip } from "primereact/chip"
 import { Card } from "primereact/card"
+import { useNavigate } from "react-router-dom"
 
 import PropTypes from "prop-types"
 
 const CardEvent = ({ event }) => {
+    const navigate = useNavigate()
+
+    const handleSelectEvent = () => {
+        navigate('/detail-event')
+    }
+
     const header = (
         <div className="relative">
             <img alt="Card" src={event.imgEvent} className="w-full h-40 rounded-t" />
@@ -20,8 +27,8 @@ const CardEvent = ({ event }) => {
     )
 
     return (
-        <div className="card flex justify-center">
-            <Card header={header} className="font-poppins bg-blackPure w-64 h-auto">
+        <div className="card flex justify-center cursor-pointer">
+            <Card header={header} className="font-poppins bg-blackPure w-64 h-auto" onClick={handleSelectEvent}>
                 <h2 className="text-base font-poppins text-white -mt-5">{event.intitule}</h2>
                 <p className=" text-[0.7em] text-white -mt-3"><i className="pi pi-clipboard text-[0.9em] me-2"></i>{event.organisateur}</p>
                 <p className=" text-[0.7em] text-white -mt-3"><i className="pi pi-map-marker text-[0.9em] me-2"></i>{event.lieu}</p>

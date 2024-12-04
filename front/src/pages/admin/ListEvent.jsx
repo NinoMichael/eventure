@@ -53,7 +53,6 @@ const Event = () => {
         },
     ]
 
-
     return (
         <div className="bg-blackPure">
             <VMenuAdmin collapsed={collapsed} setCollapsed={setCollapsed} />

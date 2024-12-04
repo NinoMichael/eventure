@@ -1,16 +1,33 @@
 import { Chip } from "primereact/chip"
 import { Card } from "primereact/card"
+import { TieredMenu } from 'primereact/tieredmenu'
+import { useRef } from "react"
 
 import PropTypes from "prop-types"
 
 const CardEventAdmin = ({ event }) => {
+    const menu = useRef(null)
+
+    const items = [
+        {
+            label: "Editer",
+            icon: 'pi pi-pen-to-square',
+        },
+        {
+            label: "Supprimer",
+            icon: 'pi pi-trash',
+        },
+    ]
+
     const header = (
         <div className="relative">
             <img alt="Card" src={event.imgEvent} className="w-full h-40 rounded-t" />
 
             <div className="flex flex-row justify-between">
                 <Chip label={event.typeEvent} className="absolute bg-white shadow font-poppins text-xs text-black top-2 left-2 rounded ps-1 pe-1 pb-0 h-7" />
-                <i className="pi pi-ellipsis-v text-white absolute top-4 right-2 cursor-pointer" title="Option"></i>
+                <i className="pi pi-ellipsis-v text-white absolute top-4 right-2 cursor-pointer" title="Option"
+                    onClick={(e) => menu.current.toggle(e)}></i>
+                <TieredMenu model={items} popup ref={menu} className="font-poppins text-white bg-blackCustom text-sm" />
             </div>
         </div>
     )

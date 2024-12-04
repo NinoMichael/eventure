@@ -155,3 +155,22 @@ background-color: transparent !important;
 .p-menu .p-submenu-header {
   @apply bg-blackCustom;
 }
+
+.p-tieredmenu-root-list {
+  @apply bg-blackCustom;
+}
+
+.p-tieredmenu .p-submenu-list {
+  @apply bg-blackCustom;
+  @apply rounded;
+}
+
+.p-tieredmenu .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
+  color : white !important;
+}
+
+.p-tieredmenu .p-menuitem > .p-menuitem-content .p-menuitem-link {
+  @apply hover:bg-purple-600;
+}
+
+

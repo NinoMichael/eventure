@@ -26,9 +26,8 @@ const AddEvent = () => {
     const [description, setDescription] = useState("")
     const [nbrePlace, setNbrePlace] = useState(100)
     const [tarif, setTarif] = useState(2000)
-    const [isDisabled, setIsDisabled] = useState(false)
+    const [isDisabled, setIsDisabled] = useState(true)
     const [imgEvent, setImgEvent] = useState(null)
-
 
     const typeOptions = [
         { id: 1, event: "Musical" },
@@ -49,6 +48,11 @@ const AddEvent = () => {
             }
             reader.readAsDataURL(file)
         }
+    }
+
+    const activateDiv = (e) => {
+        setCheckedEntry(e.checked)
+        setIsDisabled(false)
     }
 
     return (
@@ -186,17 +190,31 @@ const AddEvent = () => {
                                 <div className="flex flex-row">
                                     <div className="flex flex-row space-x-16">
                                         <div className="-mt-1 cursor-pointer">
-                                            <Checkbox inputId="libre" onChange={e => setCheckedEntry(e.checked)} checked={checkedEntry} />
+                                            <Checkbox inputId="libre" onChange={(e) => activateDiv(e)} checked={checkedEntry} />
                                             <label htmlFor="libre" className="ml-2 text-white font-poppins text-sm">Libre</label>
                                         </div>
 
-                                        <div className="flex flex-row -mt-3 space-x-4" aria-disabled>
-                                            <h6 className="font-normal font-poppins text-sm mt-2 text-white">Régler le tarif à : </h6>
+                                        <div className="flex flex-row -mt-3 space-x-4">
+                                            {
+                                                isDisabled ? (
+                                                    <h6 className="font-normal font-poppins text-sm mt-2 text-neutral-600">Régler le tarif à : </h6>
+                                                ) : (
+                                                    <h6 className="font-normal font-poppins text-sm mt-2 text-white">Régler le tarif à : </h6>
+                                                )
+                                            }
+
                                             <div className="flex flex-row space-x-2">
                                                 <div className="bg-purpleCustom shadow rounded p-1 h-6 mt-1 cursor-pointer">
                                                     <i className="pi pi-minus text-white"></i>
                                                 </div>
-                                                <InputText value={tarif} onChange={(e) => setTarif(e.target.value)} className="w-36 bg-transparent text-white h-8 border-white font-poppins" />
+                                                {
+                                                    isDisabled ? (
+                                                        <InputText disabled value={tarif} onChange={(e) => setTarif(e.target.value)} className="w-36 bg-transparent text-white h-8 border-white font-poppins" />
+                                                    ) : (
+                                                        <InputText value={tarif} onChange={(e) => setTarif(e.target.value)} className="w-36 bg-transparent text-white h-8 border-white font-poppins" />
+                                                    )
+                                                }
+
                                                 <div className="bg-purpleCustom shadow rounded p-1 h-6 mt-1 cursor-pointer">
                                                     <i className="pi pi-plus text-white"></i>
                                                 </div>
