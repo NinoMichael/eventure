@@ -1,0 +1,176 @@
+@import "leaflet/dist/leaflet.css";
+
+@layer tailwind-base, primereact, tailwind-utilities;
+
+@layer tailwind-base {
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Courgette';
+    src: url('/fonts/Courgette/Courgette-Regular.ttf');
+  }
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+
+
+body {
+  @apply font-poppins;
+  @apply text-sm;
+  @apply overflow-x-hidden;
+
+  margin : 0;
+}
+
+.custom-bg-home {
+  background-image : url('./images/bg-purple.jpg');
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-position : top;
+  background-attachment : fixed;
+}
+
+.custom-menubar {
+  background-color: transparent !important;
+  border : none !important;
+}
+
+.custom-menubar .p-menubar {
+background-color: transparent !important;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
+  color : white !important;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text:hover {
+  background-color : transparent !important;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content:hover {
+  background-color : transparent !important;
+  text-decoration : underline 2px white !important;
+  text-underline-offset : 12px;
+}
+
+/*
+.custom-home-calendar .p-calendar .p-inputtext  {
+  background : transparent !important;
+  padding: 0.2rem 0.4rem; 
+  font-size: 0.85rem; 
+  @apply text-white;
+  @apply font-poppins;
+}
+
+ .p-calendar {
+  font-size: 0.75rem; 
+}
+
+ .p-datepicker {
+  width: 350px; 
+  height : 350px;
+  @apply font-poppins;
+}
+
+ .p-datepicker .p-datepicker-header {
+  padding: 0.2rem; 
+}
+
+ .p-datepicker .p-datepicker-title {
+  font-size: 0.75rem; 
+}
+
+ .p-datepicker .p-datepicker-prev,
+ .p-datepicker .p-datepicker-next {
+  width: 1rem;
+  height: 1rem;
+}
+
+ .p-datepicker .p-datepicker-calendar td,
+ .p-datepicker .p-datepicker-calendar th {
+  padding: 0.2rem; 
+}
+
+ .p-datepicker .p-datepicker-calendar .p-highlight {
+  background-color: #007ad9; 
+  color: #fff; 
+}
+
+ .p-datepicker .p-datepicker-today {
+  border-color: #007ad9; 
+}
+
+ .p-datepicker .p-datepicker-calendar {
+  font-size: 0.7rem; 
+}
+
+ .p-datepicker .p-datepicker-today .p-highlight {
+  background-color: #007ad9;
+  color: #fff;
+}
+
+.custom-dropdown-toolbar::placeholder {
+  color: white; 
+  opacity: 1; 
+  font-size : 0.85em;
+
+  @apply font-poppins;
+}
+
+.custom-dropdown-toolbar .p-dropdown-label {
+  color: white; 
+  opacity: 1; 
+  font-size : 0.85em;
+
+  @apply font-poppins;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+  @apply font-poppins;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  @apply bg-blackCustom;
+  @apply text-white;
+}
+
+*/
+
+.custom-input-search-for-company:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-border-search {
+  border : 1px solid white;
+}
+
+.p-menu .p-submenu-header {
+  @apply bg-blackCustom;
+}
+
+.p-tieredmenu-root-list {
+  @apply bg-blackCustom;
+}
+
+.p-tieredmenu .p-submenu-list {
+  @apply bg-blackCustom;
+  @apply rounded;
+}
+
+.p-tieredmenu .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
+  color : white !important;
+}
+
+.p-tieredmenu .p-menuitem > .p-menuitem-content .p-menuitem-link {
+  @apply hover:bg-purple-600;
+}
+
+

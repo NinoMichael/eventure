@@ -1,0 +1,91 @@
+.p-calendar .p-inputtext  {
+    background : transparent !important;
+    padding: 0.2rem 0.4rem; 
+    font-size: 0.85rem; 
+    @apply text-white;
+    @apply font-poppins;
+  }
+  
+   .p-calendar {
+    font-size: 0.75rem; 
+  }
+  
+   .p-datepicker {
+    width: 350px; 
+    height : 350px;
+    @apply font-poppins;
+    @apply bg-blackCustom;
+  }
+  
+   .p-datepicker .p-datepicker-header {
+    padding: 0.2rem; 
+    @apply bg-blackCustom;
+    @apply text-white;
+  }
+  
+   .p-datepicker .p-datepicker-title {
+    font-size: 0.75rem; 
+    @apply text-white;
+  }
+  
+   .p-datepicker .p-datepicker-prev,
+   .p-datepicker .p-datepicker-next {
+    width: 1rem;
+    height: 1rem;
+    @apply text-white;
+  }
+  
+   .p-datepicker .p-datepicker-calendar td,
+   .p-datepicker .p-datepicker-calendar th {
+    padding: 0.2rem; 
+    @apply text-white;
+  }
+  
+   .p-datepicker .p-datepicker-calendar .p-highlight {
+    background-color: #007ad9; 
+    color: #fff; 
+  }
+  
+   .p-datepicker .p-datepicker-today {
+    border-color: #007ad9; 
+  }
+  
+   .p-datepicker .p-datepicker-calendar {
+    font-size: 0.7rem; 
+    @apply text-white;
+  }
+  
+   .p-datepicker .p-datepicker-today .p-highlight {
+    @apply bg-purpleCustom;
+    color: #fff;
+  }
+
+  .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month,
+  .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year,
+  .p-datepicker .p-monthpicker .p-monthpicker-month, .p-datepicker .p-yearpicker .p-yearpicker-year,
+  .p-datepicker table td > span {
+    @apply text-white;
+    @apply hover:bg-purpleCustom;
+  }
+
+ .p-dropdown .p-dropdown-label.p-placeholder {
+    @apply text-white;
+    @apply font-poppins;
+    @apply text-xs;
+  }
+
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item { 
+    @apply text-white; 
+  }
+
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item:hover {
+    @apply bg-purple-500;
+  }
+
+  .custom-input-chat:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+ 
+

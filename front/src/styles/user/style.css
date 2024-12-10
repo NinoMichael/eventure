@@ -1,0 +1,16 @@
+.p-paginator .p-paginator-pages .p-paginator-page
+ {
+    @apply text-white;
+    @apply font-poppins;
+    @apply hover:bg-blackCustom;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    @apply bg-purpleCustom;
+    @apply text-white;
+}
+
+.p-paginator-next .p-paginator-element .p-link {
+    @apply hover:bg-blackCustom;
+    @apply hover:text-white;
+}
