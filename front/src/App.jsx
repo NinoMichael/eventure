@@ -21,6 +21,7 @@ import CategoryEvent from './pages/user/CategoryEvent'
 import Event from './pages/admin/ListEvent'
 import AddEvent from './pages/admin/AddEvent'
 import DetailEvent from './pages/user/DetailEvent'
+import SavedEvent from './pages/user/SavedEvent'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -56,6 +57,7 @@ function App() {
               <Route path="/explore/category-event" element={<CategoryEvent />} />
               <Route path="/discussion" element={<WorkspaceUser />} />
               <Route path="/detail-event" element={<DetailEvent />} />
+              <Route path="/saved-event" element={<SavedEvent />} />
 
               {/* ======= ADMIN ========= */}
               <Route path="/login-admin" element={<LoginAdmin />} />

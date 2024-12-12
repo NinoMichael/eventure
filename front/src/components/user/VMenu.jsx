@@ -66,12 +66,14 @@ const VMenu = ({ collapsed, setCollapsed }) => {
                 {
                     label: "Enregistrement",
                     icon: 'pi pi-bookmark',
-                    template: itemRenderer
+                    template: itemRenderer,
+                    url: '/saved-event',
                 },
                 {
                     label: "Déconnexion",
                     icon: 'pi pi-sign-out',
-                    template: itemRenderer
+                    template: itemRenderer,
+                    url: '/'
                 }
             ]
         },

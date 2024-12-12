@@ -4,11 +4,18 @@ import { motion } from "framer-motion"
 import ToolBarUser from "../../components/user/ToolBar"
 import { Button } from "primereact/button"
 import { Chip } from "primereact/chip"
+import ParticipateDialog from "../../components/user/ParticipateDialog"
 
 import reko from '../../assets/reko.png'
 
 const DetailEvent = () => {
     const [collapsed, setCollapsed] = useState(false)
+    const [saved, setSaved] = useState(false)
+    const [participateDialog, setParticipateDialog] = useState(false)
+
+    const handleParticipate = () => {
+        setParticipateDialog(true)
+    }
 
     return (
         <div className="custom-bg-home relative">
@@ -69,11 +76,19 @@ const DetailEvent = () => {
                 </main>
             </motion.div>
 
+
+            <Button
+                icon="pi pi-bookmark"
+                className={`font-poppins text-lg text-white ${saved ? 'bg-purpleCustom' : 'bg-blackPure'} border-none rounded-full shadow fixed bottom-10 left-64 px-7 py-3 z-50`}
+                style={{ position: "fixed" }} onClick={() => setSaved(!saved)}
+            />
+
             <Button
                 label="Obtenir un ticket"
                 className="font-poppins text-base text-white bg-purpleCustom border-none rounded-3xl shadow fixed bottom-10 right-10 px-8 py-4 z-50"
-                style={{ position: "fixed" }}
+                style={{ position: "fixed" }} onClick={handleParticipate}
             />
+            <ParticipateDialog participateDialog={participateDialog} setParticipateDialog={setParticipateDialog} />
         </div>
     )
 }

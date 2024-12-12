@@ -71,8 +71,6 @@ const EventStat = () => {
                 },
             },
         }
-
-
         setChartData(data)
         setChartOptions(options)
     }, [])

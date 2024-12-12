@@ -69,7 +69,7 @@ const Homepage = () => {
                             label="Commencer"
                             icon="pi pi-arrow-right"
                             className="bg-blackCustom font-poppins text-sm border-none py-3 px-10 rounded-3xl text-white mt-7"
-                            onClick={() => navigate('/home-register')}
+                            onClick={() => navigate('/explore')}
                         />
                     </motion.div>
                 </div>
