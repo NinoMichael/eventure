@@ -22,6 +22,8 @@ import Event from './pages/admin/ListEvent'
 import AddEvent from './pages/admin/AddEvent'
 import DetailEvent from './pages/user/DetailEvent'
 import SavedEvent from './pages/user/SavedEvent'
+import ListEventInscription from './pages/admin/ListEventInscription'
+import ListInscription from './pages/admin/ListInscription'
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -65,6 +67,8 @@ function App() {
               <Route path="/workspace" element={<Workspace />} />
               <Route path="/event" element={<Event />} />
               <Route path="/add-event" element={<AddEvent />} />
+              <Route path="/list-event-inscription" element={<ListEventInscription />} />
+              <Route path="/list-inscription" element={<ListInscription />} />
 
             </Routes>
           </BrowserRouter>

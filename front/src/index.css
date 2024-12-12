@@ -173,4 +173,38 @@ background-color: transparent !important;
   @apply hover:bg-purple-600;
 }
 
+.p-datatable .p-datatable-thead > tr > th {
+  @apply bg-purpleCustom;
+  @apply text-white;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  @apply bg-blackCustom;
+  @apply text-white;
+}
+
+.custom-datatable .p-paginator{
+  @apply bg-blackCustom;
+  @apply text-white;
+}
+
+.custom-datatable .p-dropdown .p-dropdown-trigger, 
+.custom-datatable .p-paginator .p-dropdown,
+.custom-datatable .p-paginator .p-dropdown .p-dropdown-label {
+  @apply bg-purpleCustom;
+  @apply text-white;
+  @apply font-poppins;
+  @apply border-none;
+  @apply text-white;
+}
+
+.p-dropdown-panel .p-dropdown-items{
+  @apply bg-blackPure;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+  @apply text-white;
+  @apply font-poppins;
+}
+
 

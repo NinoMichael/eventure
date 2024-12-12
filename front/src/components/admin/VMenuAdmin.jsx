@@ -46,10 +46,10 @@ const VMenuAdmin = ({ collapsed, setCollapsed }) => {
                     url: '/dashboard-admin'
                 },
                 {
-                    label: "Audience",
+                    label: "Inscription",
                     icon: 'pi pi-briefcase',
                     template: itemRenderer,
-                    url: ''
+                    url: '/list-event-inscription'
                 },
                 {
                     label: "Evénement",
