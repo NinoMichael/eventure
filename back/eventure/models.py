@@ -55,7 +55,7 @@ class TypeEvenement(models.Model):
 
 class Evenement(models.Model):
     id_evenement = models.AutoField(primary_key=True)
-    intitule = models.CharField(max_length=200)
+    intitule = models.CharField(max_length=150)
     lieu = models.ForeignKey(Lieu, on_delete=models.CASCADE)
     date_debut = models.DateTimeField()
     date_fin = models.DateTimeField()
